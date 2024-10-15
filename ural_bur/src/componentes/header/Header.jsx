@@ -1,20 +1,25 @@
 import React from 'react';
 import LogoSvg from '../images/logo.svg'
-// import { ReactComponent as SvgLogo } from '../images/logo.svg';
-import '../css/style.css';
+
+import '../css/_bootstrap.css';
 import '../css/animate.css';
-// import '../css/owl.carousel.min.css';
+import '../css/bootstrap-grid.css';
+import '../css/bootstrap-reboot.css';
+import '../css/bootstrap.css';
+import '../css/bootstrap.css.map';
 import '../css/jquery.fancybox.min.css';
+// import './css/owl.carousel.min.css';
+import '../css/style.css';
 import '../fonts/ionicons/css/ionicons.min.css';
 import '../fonts/fontawesome/css/font-awesome.min.css';
 
 
-function Header() {
+export default function Header() {
     return (
         <header role="banner">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a href='#'><img className="logo" src={LogoSvg} loading="lazy" /></a>
+                    <a href='index.html'><img className="logo" src={LogoSvg} alt='' loading="lazy" /></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -22,16 +27,16 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarsExample05">
                         <ul className="navbar-nav pl-md-5 ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" href="index.html">Home</a>
+                            <a className="nav-link active" href="index.html">Главная</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="about.html">About</a>
+                            <a className="nav-link" href="about.html">О компании</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="projects.html">Projects</a>
+                            <a className="nav-link" href="projects.html">Проекты</a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <a className="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сервис</a>
                             <div className="dropdown-menu" aria-labelledby="dropdown04">
                                 <a className="dropdown-item" href="services.html">Architectural Design</a>
                                 <a className="dropdown-item" href="services.html">Interior</a>
@@ -39,10 +44,10 @@ function Header() {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="blog.html">Blog</a>
+                            <a className="nav-link" href="blog.html">Блог</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="contact.html">Contact</a>
+                            <a className="nav-link" href="contact.html">Контакты</a>
                         </li>
                         </ul>
 
@@ -58,6 +63,4 @@ function Header() {
             </nav>
         </header>
     )
-}
-
-export default Header;
+};

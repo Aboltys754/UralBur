@@ -1,6 +1,12 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
     "react-owl-carousel": "^2.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.79.5"
   }
 }
